@@ -1,0 +1,18 @@
+                                                           Key Differences Between Virtual Machines (VMs) and Containers
+VMs: Run on a hypervisor, each VM includes a full guest OS.
+Containers: Share the host OS kernel, no guest OS needed.
+VMs: Higher resource use due to full OS overhead.
+Containers: Lightweight, lower resource use.
+VMs: Slower to start due to OS initialization.
+Containers: Faster to start.
+VMs: Strong isolation, suitable for diverse OS environments.
+Containers: Less isolation, process-level.
+Use Cases:
+VMs: Ideal for running varied OS environments and legacy applications.
+Containers: Best for microservices, DevOps, and scalable applications.
+Performance:
+VMs: Slightly reduced performance due to virtualization overhead.
+Containers: High performance due to minimal overhead.
+Portability:
+VMs: Less portable due to full OS dependency.
+Containers: Highly portable across different environments.
