@@ -1,22 +1,18 @@
-Introduction to Containers
-Definition: What are containers?
+                                    Introduction to Containers
+                                    Definition: What are containers?
 Containers are lightweight, standalone, and executable software packages that include everything needed to run an application: code, runtime, system tools, libraries, and settings. They encapsulate an application and its dependencies, ensuring consistency across different environments (development, testing, production) without needing to run a full virtual machine.
-
 Purpose: Why are containers used in modern software development and deployment?
 Containers streamline the development and deployment processes by providing a consistent environment across different stages of the software lifecycle. They improve portability, scalability, and efficiency, enabling applications to be deployed rapidly and reliably across various environments. Containers also facilitate microservices architectures, where applications are broken down into smaller, independently deployable components.
 
-Container Architecture
+                                        Container Architecture
 Components: Overview of container components (e.g., images, containers, registries)
-
 Images: Read-only templates used to create containers. They contain the application code, runtime, libraries, and dependencies.
 Containers: Instances of container images that are running and executing the application. Containers are created from images and can be stopped, started, and managed independently.
 Registries: Repositories where container images are stored and managed. Public registries like Docker Hub and private registries provide a way to distribute and share images.
 Isolation: How containers achieve process isolation
 Containers achieve isolation by leveraging OS-level features such as namespaces and cgroups. Namespaces provide isolated environments for processes, ensuring that containers do not interfere with each other. Cgroups manage resource allocation (CPU, memory) to ensure that containers have access to necessary resources without affecting others.
 
-Building Containers
-Image Creation: Steps to create a container image (e.g., writing Dockerfiles, using Buildah)
-
+Building Containers----->Image Creation: Steps to create a container image (e.g., writing Dockerfiles, using Buildah)
 Dockerfiles: A text file containing a series of instructions to build a container image. Instructions include setting the base image, copying files, installing packages, and defining the command to run.
 Buildah: A tool for creating and managing container images without requiring a daemon. It allows building images from scratch, modifying existing images, and pushing images to registries.
 Image Layers: Understanding how images are built in layers and what benefits this provides
@@ -64,7 +60,7 @@ Bind Mounts: Differences between volumes and bind mounts
 Volumes: Managed by the container runtime, stored in a designated directory on the host, and provide better data management.
 Bind Mounts: Map a specific host directory to a container directory, allowing direct access to host files but with less isolation and management compared to volumes.
 Security
-Best Practices: Security practices for working with containers
+                             Best Practices: Security practices for working with containers
 
 Use Official Images: Start with trusted and regularly updated base images.
 Scan for Vulnerabilities: Regularly scan images for security vulnerabilities.
